@@ -1,3 +1,209 @@
 html{
     scroll-behavior: smooth;
 }
+body {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Raleway';
+  background-color: white;
+}
+.container{
+  display: grid;
+  grid-template-rows: auto 30px auto auto auto auto 100px;
+  grid-row-gap: 15px;
+  width: 100%;
+}
+
+a{
+  color: black;
+}
+header {
+  text-align:center;
+  align-items: center;
+  grid-row: 1/2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+header p {
+  font-size: 11pt;
+  text-align: center;
+}
+
+h2 {
+  color: steelblue;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20pt;
+  margin-top: 20px;
+  text-align: center;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 11pt;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: Raleway;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color:#F44061;
+}
+
+.active {
+  color:#F44061;
+}
+
+nav a{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip a{
+  background: white;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top;
+  transition-property: top;
+  z-index: 1;
+}
+.skip a:focus{
+  top: 0px;
+}
+:focus{
+  border: 2px solid black;
+}
+
+@keyframes example {
+  0%   {background-color: #6100BD;
+        color: white;}
+  33%  {background-color: #F44061;
+        color: white;}
+  66%  {background-color: #FFD22E;
+        color: black;}
+  100% {background-color: #6100BD;
+        color: white;}
+}
+
+footer{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-color: white;
+  padding-top: 30px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+footer p{
+  color: black;
+  text-align: center;
+  font-size: 10pt;
+  padding-bottom: 30px;
+}
+
+.main {
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+
+  header{
+    padding-left: 100px;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    background-color: #6100BD;
+  }
+
+  footer{
+    display: grid;
+    grid-template-columns: 220px auto 220px;
+  }
+
+  li a {
+    display: inline;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: left;
+  }
+  li a:hover {
+    color:#F44061;
+  }
+
+  ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+}
+
+  .container{
+    display: grid;
+    width: 100%;
+    grid-template-rows: auto 30px auto auto auto 100px;
+  }
+
+}  /*End the media query*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top; /* Your code here - set to default setting */
+    transition: top; /* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+  footer{
+    background-color: #483D8B;
+    padding-top: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+}
