@@ -7,6 +7,18 @@ body {
   font-family: 'Raleway';
   background-color: white;
 }
+
+footer #links{
+  grid-column: 1/2;
+}
+
+footer #address{
+  grid-column: 3/4;
+}
+
+#links img {
+  max-height: 30px;
+}
 .container{
   display: grid;
   grid-template-rows: auto 30px auto auto auto auto 100px;
