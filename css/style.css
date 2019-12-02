@@ -8,14 +8,6 @@ body {
   background-color: white;
 }
 
-footer #links{
-  grid-column: 1/2;
-}
-
-footer #address{
-  grid-column: 3/4;
-}
-
 #links img {
   max-height: 30px;
 }
@@ -30,11 +22,15 @@ nav {
   grid-row: 2/3;
 }
 
+footer #copyright {
+  grid-row: 3/4;
+}
+
 .info{
   grid-row: 3/4;
   display: grid;
   grid-template-columns: 100px auto;
-  padding-top: 30px;
+  padding-top: 150px;
 }
 
 .date{
@@ -151,24 +147,23 @@ footer{
   display: grid;
   grid-template-rows: auto auto auto;
   background-color: white;
-  padding-top: 30px;
   text-align: center;
   bottom: 0px;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 footer p{
   color: black;
   text-align: center;
   font-size: 10pt;
-  padding-bottom: 30px;
 }
 
 .main {
   text-align: center;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 450px) {
 
   header{
     animation-name: example;
@@ -187,8 +182,21 @@ footer p{
   }
   .info {
     grid-row: 3/4;
+    padding-top: 30px;
   }
 
+  footer #links{
+    grid-column: 1/2;
+  }
+
+  footer #copyright{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  footer #address{
+    grid-column: 3/4;
+  }
 
   ul {
     list-style-type: none;
