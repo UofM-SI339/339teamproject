@@ -22,6 +22,11 @@ p{
   width: 100%;
 }
 
+.work img{
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
 .index_container{
   display: grid;
   grid-template-rows: auto 30px;
