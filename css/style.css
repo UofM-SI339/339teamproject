@@ -27,6 +27,10 @@ p{
   margin-bottom: 8px;
 }
 
+.about_me {
+  margin-top: 20px;
+}
+
 .index_container{
   display: grid;
   grid-template-rows: auto 30px;
