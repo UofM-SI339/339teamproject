@@ -28,7 +28,7 @@ p{
 }
 
 .about_me {
-  margin-top: 20px;
+  margin-top: 150px;
 }
 
 .index_container{
@@ -223,6 +223,10 @@ footer p{
 }
 
 @media only screen and (min-width: 600px) {
+
+  .about_me {
+    margin-top: 30px;
+  }
 
   header{
     animation-name: example;
