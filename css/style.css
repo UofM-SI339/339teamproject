@@ -8,6 +8,10 @@ body {
   background-color: white;
 }
 
+p{
+  line-height: 18px;
+}
+
 #links img {
   max-height: 30px;
 }
