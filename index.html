@@ -1,95 +1,86 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-</head>
-
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+  </head>
+  <body>
   <main>
-    <!-- Add skip in css -->
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
-
-
-
-
-
-    <header id="main">
+    <div class="skip">Skip to Main Content</a></div>
+    <div class="index_container">
+    <header class = "main">
       <h1>Michaelanne Dye</h1>
+      <p>Presidential Postdoc, School of Information, University of Michigan</p>
     </header>
-    <div class= "dropdown">
-    <button class="dropbtn">Menu</button>
-      <div class="nav">
-        <nav>
-          <ul>
-            <li><a href="index.html" class = "active">Home</a></li>
-            <li><a href="news.html">Recent News</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="files/michaelannedye_cv.pdf">CV</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><a href = "index.html" class = "active">HOME</a></li>
+          <li><a href = "news.html" >RECENT NEWS</a></li>
+          <li><a target = "blank" href = "https://michaelannedye.files.wordpress.com/2019/01/michaelannedye_cv_2019.pdf">CV</a></li>
+          <li><a href = "publications.html">PUBLICATIONS</a></li>
+        </ul>
+      </nav>
     </div>
-
+  </div>
     <div class = 'about_me'>
       <p>I am a Presidential Postdoctoral Fellow at the University of Michigan’s School of Information.  My work draws on the fields of Anthropology, CSCW (Computer Supported Cooperative Work), and ICTD (Information Communication Technologies & Development) to study how people collaboratively access and participate with internet technologies in constrained contexts.</p><br>
 
       <p>Drawing on my training as a sociocultural anthropologist, my work focuses on underserved groups to investigate (1) internet access in resource-constrained regions; (2) the design of citizen-led information systems; and (3) social media use for social change.</p><br>
     </div>
-    <div class = 'rose_pic'>
+    <!-- <div class = 'rose_pic'>
       <img src = 'images/mdye_flowers.jpg' alt = 'Michaelanne Dye with Flowers'>
-    </div>
+    </div> -->
 
     <!-- <button class = 'education'>
       <img src 'images/grad_cap.png' alt = 'Graduation cap icon'>
     </button> -->
-
-    <div class="dropdown_education">
-      <img src = 'images/grad_cap.png' alt = 'Graduation cap icon' width="200" height="300">
-        <div class="dropdown-content">
-          <div class="title"><h2>Education</h2></div>
-          <li> PH.D. The Schoolf of Interactive Computing at Georgia Tech</li>
-          <li> Masters: Anthopology from Georgia State University</li>
-          <li> Bachelors: Spanish from the University of Georgia</li>
+    <div class = drop_container>
+    <div class="education">
+      <img src = 'images/grad_cap.png' alt = 'Graduation cap icon' width="50" height="75">
+          <h2>Education</h2>
+          <p> PH.D. The Schoolf of Interactive Computing at Georgia Tech</p>
+          <p> Masters: Anthopology from Georgia State University</p>
+          <p> Bachelors: Spanish from the University of Georgia</p>
       </div>
-    </div>
 
-    <div class="dropdown_work">
-      <img src = 'images/computer.png' alt = 'Computer icon' width="200" height="300">
-        <div class="dropdown-content">
-          <div class="title"><h2>Work Experience</h2></div>
+
+    <div class="work">
+        <img src = 'images/computer.png' alt = 'Computer icon' width="50" height="75">
+          <h2>Work Experience</h2>
           <!-- <li> PH.D. The Schoolf of Interactive Computing at Georgia Tech</li>
           <li> Masters: Anthopology from Georgia State University</li> -->
-          <li> Public Relations Manager
-            <ul>
-              <li>Georgia Tech</li>
-              <li>Georgia Acquarium</li>
-              <li>Northside Hospital</li>
-              <li>Cohen Wolfe</li>
-            </ul>
-          </li>
-      </div>
+          <p> Public Relations Manager</p>
+          <p> Private Social Media Consultant</p>
+        </div>
+    <div class="activities">
+      <img src = 'images/airplane.png' alt = 'Airplane icon' width="50" height="75">
+          <h2>Activities</h2>
+          <p> Exploring remote places</p>
+          <p> Throwing impromptu dance parties</p>
+          <p> Reading histroical fiction</p>
+          <p> Playing with animals</p>
     </div>
 
-    <div class="dropdown_activities">
-      <img src = 'images/airplane.png' alt = 'Airplane icon' width="200" height="300">
-        <div class="dropdown-content">
-          <div class="title"><h2>Activities</h2></div>
-          <li> Exploring remote places</li>
-          <li> Throwing impromptu dance parties</li>
-          <li> Reading histroical fiction</li>
-          <li> Playing with animals</li>
-      </div>
-    </div>
-
+</div>
 
   </main>
   <footer>
-    <p> Test Footer </p>
+    <div id = "links">
+    <a href = "https://www.linkedin.com/in/michaelannedye"><img src = "images/download.png" alt = "LinkedIn link"></a>
+    <a href = "mailto:mmtd@umich.edu"><img src = "images/email.png" alt = "Email link"></a>
+    <a href = "https://twitter.com/michaelannedye"><img src = "images/twitter.png" alt = "Twitter link"></a>
+  </div>
+    <p id = "copyright"> &copy; Michaelanne Dye 2019</p>
+    <div id = "address">
+      <p>Mailing address:</p>
+      <p>School of Information at the University of Michigan</p>
+      <p>105 S State St.</p>
+      <p>Ann Arbor, MI 48109</p>
+    </div>
   </footer>
 </body>
 
