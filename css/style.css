@@ -42,15 +42,20 @@ p{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  grid-auto-columns: 1fr
 }
 
 
 .drop_container div{
-  width: 25%;
+  width: 85%;
   margin-top: 2%;
   border: 7px solid #87CEEB;
   padding-bottom: 15px;
   text-align: center;
+}
+
+.about_me p{
+  line-height: 2em;
 }
 
 nav {
@@ -228,6 +233,9 @@ footer p{
     margin-top: 30px;
   }
 
+  .drop_container div{
+    width: 23%;
+  }
   header{
     animation-name: example;
     animation-duration: 8s;
