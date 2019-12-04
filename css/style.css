@@ -65,6 +65,7 @@ footer #copyright {
 }
 
 .explain{
+  line-height: 19px;
   grid-column: 2/3;
   padding-bottom: 10px;
 }
@@ -186,15 +187,20 @@ nav a{
 footer{
   display: grid;
   grid-template-rows: auto auto auto;
-  background-color: white;
+  background-color: black;
   text-align: center;
   bottom: 0px;
   width: 100%;
   padding-bottom: 30px;
+  margin-top: 20px;
+}
+
+footer #links{
+  padding-top: 20px;
 }
 
 footer p{
-  color: black;
+  color: white;
   text-align: center;
   font-size: 10pt;
 }
@@ -203,7 +209,7 @@ footer p{
   text-align: center;
 }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 600px) {
 
   header{
     animation-name: example;
@@ -226,10 +232,12 @@ footer p{
   }
 
   footer #links{
+    padding-top: 55px;
     grid-column: 1/2;
   }
 
   footer #copyright{
+    padding-top: 65px;
     grid-column: 2/3;
     grid-row: 1/2;
   }
